@@ -13,7 +13,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="relative">
+    <nav className="md:mb-16 relative">
       <div>
         <div
           onClick={() => setOpen(!open)}
@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={`md:flex gap-6  duration-1000
+        className={`md:flex gap-6 md:w-full duration-1000 bg-blue-600 p-4 rounded text-white
         ${open ? 'md:top-0 top-12' : '-top-80 md:top-0'}
         absolute`}
       >
